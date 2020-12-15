@@ -135,6 +135,7 @@ const Picture = ({ onSubmit, ...rest }) => {
                 onChange={onFilesAdded}
               />
             </Box>
+            
           </Box>
 
           <Box flex style={{ minWidth: "120px" }}>
@@ -155,9 +156,9 @@ const Picture = ({ onSubmit, ...rest }) => {
                     <Image
                       fit="cover"
                       src={image}
-                      width="40px"
-                      height="40px"
-                      style={{ borderRadius: "100%" }}
+                      width="140px"
+                      height="140px"
+                      // style={{ borderRadius: "100%" }}
                     />
                   }
                 />
