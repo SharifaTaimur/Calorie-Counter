@@ -66,6 +66,7 @@ const Picture = ({ onSubmit, ...rest }) => {
           image,
           paragraphs,
         });
+
         setImage("");
         setText("");
       }
@@ -81,9 +82,8 @@ const Picture = ({ onSubmit, ...rest }) => {
     reader.onload = (e) => {
       const img = e.target.result;
       // do whatever you want with the file content
-
       setImage(img);
-
+      console.log("IMAGE>>>>>>>", img);
       img.onload = () => {
         console.log(img);
       };
@@ -135,7 +135,6 @@ const Picture = ({ onSubmit, ...rest }) => {
                 onChange={onFilesAdded}
               />
             </Box>
-            
           </Box>
 
           <Box flex style={{ minWidth: "120px" }}>
